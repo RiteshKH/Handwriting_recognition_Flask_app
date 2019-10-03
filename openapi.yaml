@@ -1,0 +1,18 @@
+openapi: "3.0.0"
+
+info:
+  title: "Cursive Recognition api"
+  description: "A simple api that reads cursive letters."
+  version: "1.0"
+
+
+paths:
+  /cursive_recognize:
+    get:
+      description: "Gets the recognized letters"
+      
+      responses:
+        '200':
+          description: "Returns recognized letters from provided text"
+          content: 
+           application/json: {}
